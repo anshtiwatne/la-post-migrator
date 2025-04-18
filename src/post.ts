@@ -47,7 +47,7 @@ async function populatePost(page: Page, post) {
 }
 
 async function main() {
-	const browser = await puppeteer.launch({ headless: false })
+	const browser = await puppeteer.launch()
 	const page = await browser.newPage()
 	const posts = await getPosts()
 
